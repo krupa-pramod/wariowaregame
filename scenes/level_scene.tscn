@@ -1,3 +1,68 @@
 [gd_scene format=3 uid="uid://daryq2uvux8e0"]
 
+[ext_resource type="Texture2D" uid="uid://blxmqq5o4qfdr" path="res://back1.jpg" id="1_bl4ss"]
+[ext_resource type="Script" uid="uid://ipfxoxwgii1l" path="res://scenes/timer_screen.gd" id="1_c8xsp"]
+[ext_resource type="FontFile" uid="uid://bafc8ctegn8m6" path="res://PressStart2P-Regular.ttf" id="2_a74lg"]
+[ext_resource type="Texture2D" uid="uid://ihv303m7ieuf" path="res://ac6e5f586017456c971010fe6320929b.jpg" id="3_c8xsp"]
+
 [node name="Node2D" type="Node2D" unique_id=339468056]
+script = ExtResource("1_c8xsp")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=600128471]
+offset_right = 1153.0
+offset_bottom = 671.0
+texture = ExtResource("1_bl4ss")
+
+[node name="Level" type="RichTextLabel" parent="." unique_id=1367823244]
+offset_left = 806.0
+offset_top = 394.0
+offset_right = 1392.0
+offset_bottom = 774.0
+theme_override_fonts/normal_font = ExtResource("2_a74lg")
+theme_override_font_sizes/normal_font_size = 42
+text = "Level #"
+
+[node name="Timer" type="RichTextLabel" parent="." unique_id=1829127815]
+offset_left = 967.0
+offset_top = 338.0
+offset_right = 1436.0
+offset_bottom = 745.0
+theme_override_fonts/normal_font = ExtResource("2_a74lg")
+theme_override_font_sizes/normal_font_size = 42
+text = "0.0"
+
+[node name="PotionContainer" type="HBoxContainer" parent="." unique_id=1462620505]
+offset_left = 447.0
+offset_top = 205.0
+offset_right = 1221.0
+offset_bottom = 328.0
+
+[node name="Potion" type="TextureRect" parent="PotionContainer" unique_id=715532860]
+custom_minimum_size = Vector2(127, 123)
+layout_mode = 2
+texture = ExtResource("3_c8xsp")
+expand_mode = 1
+
+[node name="Potion2" type="TextureRect" parent="PotionContainer" unique_id=1187181592]
+custom_minimum_size = Vector2(127, 123)
+layout_mode = 2
+texture = ExtResource("3_c8xsp")
+expand_mode = 1
+
+[node name="Potion3" type="TextureRect" parent="PotionContainer" unique_id=1020582470]
+custom_minimum_size = Vector2(127, 123)
+layout_mode = 2
+texture = ExtResource("3_c8xsp")
+expand_mode = 1
+
+[node name="Potion4" type="TextureRect" parent="PotionContainer" unique_id=458312237]
+custom_minimum_size = Vector2(127, 123)
+layout_mode = 2
+texture = ExtResource("3_c8xsp")
+expand_mode = 1
+
+[node name="Potion5" type="TextureRect" parent="PotionContainer" unique_id=286194321]
+custom_minimum_size = Vector2(127, 123)
+layout_mode = 2
+texture = ExtResource("3_c8xsp")
+expand_mode = 1

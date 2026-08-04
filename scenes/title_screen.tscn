@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://c44fkjy0ixw34" path="res://4af9df8e3319de87064d476f341cc401.jpg" id="1_fgkus"]
 [ext_resource type="Script" uid="uid://cmepkbat8xol5" path="res://scenes/title_screen.gd" id="1_sa3yf"]
+[ext_resource type="FontFile" uid="uid://bafc8ctegn8m6" path="res://PressStart2P-Regular.ttf" id="3_s4lrb"]
 
 [node name="TitleScreen" type="Node2D" unique_id=1133155765]
 script = ExtResource("1_sa3yf")
@@ -14,27 +15,29 @@ offset_bottom = 794.0
 texture = ExtResource("1_fgkus")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1735017083]
-offset_left = 51.0
-offset_top = 355.0
-offset_right = 892.0
-offset_bottom = 499.0
+offset_left = 62.0
+offset_top = 375.0
+offset_right = 465.0
+offset_bottom = 546.0
 theme_override_colors/default_color = Color(0.99975544, 0.9608292, 0.9699654, 1)
 theme_override_colors/font_outline_color = Color(0.84266603, 0.07557758, 0.42791057, 1)
 theme_override_constants/outline_size = 16
+theme_override_fonts/normal_font = ExtResource("3_s4lrb")
 theme_override_font_sizes/normal_font_size = 76
 text = "dreamscape"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=239767902]
-offset_left = 521.0
-offset_top = 339.0
-offset_right = 760.0
-offset_bottom = 592.0
+offset_left = 511.0
+offset_top = 407.0
+offset_right = 779.0
+offset_bottom = 660.0
 
 [node name="start" type="Button" parent="VBoxContainer" unique_id=496380110]
 layout_mode = 2
 theme_override_colors/font_hover_color = Color(0.9938862, 0.5394586, 0.85115594, 1)
 theme_override_colors/font_outline_color = Color(0.70118403, 0.098039456, 0.30859077, 1)
 theme_override_constants/outline_size = 14
+theme_override_fonts/font = ExtResource("3_s4lrb")
 theme_override_font_sizes/font_size = 26
 text = "start game"
 
@@ -43,6 +46,7 @@ layout_mode = 2
 theme_override_colors/font_hover_color = Color(0.9938862, 0.5394586, 0.85115594, 1)
 theme_override_colors/font_outline_color = Color(0.70118403, 0.098039456, 0.30859077, 1)
 theme_override_constants/outline_size = 14
+theme_override_fonts/font = ExtResource("3_s4lrb")
 theme_override_font_sizes/font_size = 26
 text = "settings"
 
@@ -51,6 +55,7 @@ layout_mode = 2
 theme_override_colors/font_hover_color = Color(0.9938862, 0.5394586, 0.85115594, 1)
 theme_override_colors/font_outline_color = Color(0.70118403, 0.098039456, 0.30859077, 1)
 theme_override_constants/outline_size = 14
+theme_override_fonts/font = ExtResource("3_s4lrb")
 theme_override_font_sizes/font_size = 26
 text = "quit"
 
