@@ -10,7 +10,6 @@
 [ext_resource type="Script" uid="uid://cbe4awg18pp84" path="res://scenes/friend_script.gd" id="5_xpvfh"]
 [ext_resource type="Script" uid="uid://d0vexqbp0eoo8" path="res://scenes/friend_2.gd" id="7_r58ir"]
 [ext_resource type="Script" uid="uid://dp6n5ufhx4hle" path="res://scenes/friend_3.gd" id="9_oxfl2"]
-[ext_resource type="PackedScene" uid="uid://dlcvv28bxk2fy" path="res://scenes/ThemedTimer.tscn" id="11_1digs"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kquos"]
 size = Vector2(1150, 58)
@@ -81,44 +80,44 @@ shape = SubResource("RectangleShape2D_kquos")
 [node name="Platform2" type="StaticBody2D" parent="." unique_id=1636169209]
 
 [node name="ColorRect" type="ColorRect" parent="Platform2" unique_id=33139491]
-offset_left = 646.0
-offset_top = 450.0
-offset_right = 1037.0
-offset_bottom = 517.0
+offset_left = 713.0
+offset_top = 452.0
+offset_right = 1104.0
+offset_bottom = 519.0
 color = Color(0, 0, 0, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2" unique_id=1258432950]
-position = Vector2(840, 483)
+position = Vector2(908, 488)
 shape = SubResource("RectangleShape2D_pod22")
 
 [node name="Platform3" type="StaticBody2D" parent="." unique_id=726000137]
 
 [node name="ColorRect" type="ColorRect" parent="Platform3" unique_id=411288878]
-offset_left = 109.0
-offset_top = 332.0
-offset_right = 500.0
-offset_bottom = 399.0
+offset_left = 97.0
+offset_top = 303.0
+offset_right = 488.0
+offset_bottom = 370.0
 color = Color(0, 0, 0, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform3" unique_id=2079841168]
-position = Vector2(306, 366)
+position = Vector2(290, 337)
 shape = SubResource("RectangleShape2D_ptch5")
 
 [node name="Platform4" type="StaticBody2D" parent="." unique_id=1573353914]
 
 [node name="ColorRect" type="ColorRect" parent="Platform4" unique_id=1181783279]
-offset_left = 643.0
-offset_top = 160.0
-offset_right = 1034.0
-offset_bottom = 227.0
+offset_left = 685.0
+offset_top = 147.0
+offset_right = 1076.0
+offset_bottom = 214.0
 color = Color(0, 0, 0, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform4" unique_id=268795792]
-position = Vector2(838, 195)
+position = Vector2(881, 180)
 shape = SubResource("RectangleShape2D_8m1du")
 
 [node name="Player" parent="." unique_id=1770107626 instance=ExtResource("2_lmjug")]
-position = Vector2(-13, 11)
+position = Vector2(-17, 15)
 
 [node name="Friend" type="Node2D" parent="." unique_id=407639272]
 script = ExtResource("5_xpvfh")
@@ -145,10 +144,10 @@ shape = SubResource("CircleShape2D_kquos")
 script = ExtResource("7_r58ir")
 
 [node name="TextureRect" type="TextureRect" parent="Friend2" unique_id=182888015]
-offset_left = 150.0
-offset_top = 172.0
-offset_right = 382.0
-offset_bottom = 388.0
+offset_left = 100.0
+offset_top = 143.0
+offset_right = 332.0
+offset_bottom = 359.0
 texture = ExtResource("4_j1cg4")
 expand_mode = 1
 
@@ -159,17 +158,17 @@ libraries/ = SubResource("AnimationLibrary_oxfl2")
 [node name="Area2D" type="Area2D" parent="Friend2" unique_id=1942812272]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Friend2/Area2D" unique_id=321620361]
-position = Vector2(277, 281)
+position = Vector2(216, 237)
 shape = SubResource("CircleShape2D_kquos")
 
 [node name="Friend3" type="Node2D" parent="." unique_id=1601441902]
 script = ExtResource("9_oxfl2")
 
 [node name="TextureRect" type="TextureRect" parent="Friend3" unique_id=1006410484]
-offset_left = 738.0
-offset_top = 20.0
-offset_right = 904.0
-offset_bottom = 222.0
+offset_left = 819.0
+offset_top = -17.0
+offset_right = 1003.0
+offset_bottom = 200.0
 texture = ExtResource("5_vc5od")
 expand_mode = 1
 
@@ -180,8 +179,5 @@ libraries/ = SubResource("AnimationLibrary_oxfl2")
 [node name="Area2D" type="Area2D" parent="Friend3" unique_id=1735959792]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Friend3/Area2D" unique_id=994480862]
-position = Vector2(836, 123)
+position = Vector2(911, 94)
 shape = SubResource("CircleShape2D_kquos")
-
-[node name="ThemedTimer" parent="." unique_id=525575401 instance=ExtResource("11_1digs")]
-position = Vector2(-471, -12)
