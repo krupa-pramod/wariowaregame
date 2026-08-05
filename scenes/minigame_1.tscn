@@ -88,44 +88,44 @@ shape = SubResource("RectangleShape2D_kquos")
 [node name="Platform2" type="StaticBody2D" parent="." unique_id=1636169209]
 
 [node name="ColorRect" type="ColorRect" parent="Platform2" unique_id=33139491]
-offset_left = 722.0
-offset_top = 407.0
-offset_right = 1113.0
-offset_bottom = 474.0
+offset_left = 713.0
+offset_top = 452.0
+offset_right = 1104.0
+offset_bottom = 519.0
 color = Color(0, 0, 0, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform2" unique_id=1258432950]
-position = Vector2(917.75, 441.5)
+position = Vector2(908, 488)
 shape = SubResource("RectangleShape2D_pod22")
 
 [node name="Platform3" type="StaticBody2D" parent="." unique_id=726000137]
 
 [node name="ColorRect" type="ColorRect" parent="Platform3" unique_id=411288878]
-offset_left = 163.0
-offset_top = 262.0
-offset_right = 554.0
-offset_bottom = 329.0
+offset_left = 97.0
+offset_top = 303.0
+offset_right = 488.0
+offset_bottom = 370.0
 color = Color(0, 0, 0, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform3" unique_id=2079841168]
-position = Vector2(362, 295)
+position = Vector2(290, 337)
 shape = SubResource("RectangleShape2D_ptch5")
 
 [node name="Platform4" type="StaticBody2D" parent="." unique_id=1573353914]
 
 [node name="ColorRect" type="ColorRect" parent="Platform4" unique_id=1181783279]
-offset_left = 583.0
-offset_top = 136.0
-offset_right = 974.0
-offset_bottom = 203.0
+offset_left = 685.0
+offset_top = 147.0
+offset_right = 1076.0
+offset_bottom = 214.0
 color = Color(0, 0, 0, 1)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Platform4" unique_id=268795792]
-position = Vector2(778, 170)
+position = Vector2(881, 180)
 shape = SubResource("RectangleShape2D_8m1du")
 
 [node name="Player" parent="." unique_id=1770107626 instance=ExtResource("2_lmjug")]
-position = Vector2(-31, 46)
+position = Vector2(-17, 15)
 
 [node name="Friend" type="Node2D" parent="." unique_id=407639272]
 
@@ -144,16 +144,16 @@ libraries/ = SubResource("AnimationLibrary_oxfl2")
 [node name="Area2D" type="Area2D" parent="Friend" unique_id=392025743]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Friend/Area2D" unique_id=2141244082]
-position = Vector2(831, 311)
+position = Vector2(822, 418)
 shape = SubResource("CircleShape2D_kquos")
 
 [node name="Friend2" type="Node2D" parent="." unique_id=1223574429]
 
 [node name="TextureRect" type="TextureRect" parent="Friend2" unique_id=182888015]
-offset_left = 123.0
-offset_top = 113.0
-offset_right = 355.0
-offset_bottom = 329.0
+offset_left = 100.0
+offset_top = 143.0
+offset_right = 332.0
+offset_bottom = 359.0
 texture = ExtResource("4_j1cg4")
 expand_mode = 1
 
@@ -164,16 +164,16 @@ libraries/ = SubResource("AnimationLibrary_oxfl2")
 [node name="Area2D" type="Area2D" parent="Friend2" unique_id=1942812272]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Friend2/Area2D" unique_id=321620361]
-position = Vector2(242, 219)
+position = Vector2(216, 237)
 shape = SubResource("CircleShape2D_kquos")
 
 [node name="Friend3" type="Node2D" parent="." unique_id=1601441902]
 
 [node name="TextureRect" type="TextureRect" parent="Friend3" unique_id=1006410484]
-offset_left = 789.0
-offset_top = -24.0
-offset_right = 973.0
-offset_bottom = 179.0
+offset_left = 819.0
+offset_top = -17.0
+offset_right = 1003.0
+offset_bottom = 200.0
 texture = ExtResource("5_vc5od")
 expand_mode = 1
 
@@ -184,5 +184,5 @@ libraries/ = SubResource("AnimationLibrary_oxfl2")
 [node name="Area2D" type="Area2D" parent="Friend3" unique_id=1735959792]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Friend3/Area2D" unique_id=994480862]
-position = Vector2(867, 68)
+position = Vector2(911, 94)
 shape = SubResource("CircleShape2D_kquos")
