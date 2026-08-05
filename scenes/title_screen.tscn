@@ -3,6 +3,10 @@
 [ext_resource type="Texture2D" uid="uid://c44fkjy0ixw34" path="res://4af9df8e3319de87064d476f341cc401.jpg" id="1_fgkus"]
 [ext_resource type="Script" uid="uid://cmepkbat8xol5" path="res://scenes/title_screen.gd" id="1_sa3yf"]
 [ext_resource type="FontFile" uid="uid://bafc8ctegn8m6" path="res://PressStart2P-Regular.ttf" id="3_s4lrb"]
+[ext_resource type="Texture2D" uid="uid://ds058tm4ejrl2" path="res://636b4d0277fe2b0f95b3b75c6433ad37-removebg-preview.png" id="4_3yumr"]
+[ext_resource type="Texture2D" uid="uid://m6c68g8wufwj" path="res://cd846ae165139611a2637409bd216215-removebg-preview.png" id="5_cs5ya"]
+[ext_resource type="Texture2D" uid="uid://cewgn26o4afxc" path="res://16ed7f4bf99063cde73e3a8cff3a76c6-removebg-preview.png" id="6_mykxm"]
+[ext_resource type="Texture2D" uid="uid://dycjryi3ifuin" path="res://5eee54a0115fe4d44df7f6450388f97a-removebg-preview.png" id="7_tklts"]
 
 [node name="TitleScreen" type="Node2D" unique_id=1133155765]
 script = ExtResource("1_sa3yf")
@@ -15,22 +19,22 @@ offset_bottom = 794.0
 texture = ExtResource("1_fgkus")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1735017083]
-offset_left = 62.0
-offset_top = 375.0
-offset_right = 465.0
-offset_bottom = 546.0
+offset_left = 52.0
+offset_top = 396.0
+offset_right = 432.0
+offset_bottom = 625.0
 theme_override_colors/default_color = Color(0.99975544, 0.9608292, 0.9699654, 1)
 theme_override_colors/font_outline_color = Color(0.84266603, 0.07557758, 0.42791057, 1)
 theme_override_constants/outline_size = 16
 theme_override_fonts/normal_font = ExtResource("3_s4lrb")
 theme_override_font_sizes/normal_font_size = 76
-text = "dreamscape"
+text = "2 kool 4 skl"
 
 [node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=239767902]
-offset_left = 511.0
-offset_top = 407.0
-offset_right = 779.0
-offset_bottom = 660.0
+offset_left = 519.0
+offset_top = 234.0
+offset_right = 787.0
+offset_bottom = 487.0
 
 [node name="start" type="Button" parent="VBoxContainer" unique_id=496380110]
 layout_mode = 2
@@ -58,6 +62,38 @@ theme_override_constants/outline_size = 14
 theme_override_fonts/font = ExtResource("3_s4lrb")
 theme_override_font_sizes/font_size = 26
 text = "quit"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=281120203]
+offset_left = 470.0
+offset_top = 438.0
+offset_right = 628.0
+offset_bottom = 658.0
+texture = ExtResource("4_3yumr")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1108860618]
+offset_left = 421.0
+offset_top = 378.0
+offset_right = 790.0
+offset_bottom = 699.0
+texture = ExtResource("5_cs5ya")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=107361095]
+offset_left = 606.0
+offset_top = 426.0
+offset_right = 824.0
+offset_bottom = 666.0
+texture = ExtResource("6_mykxm")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="." unique_id=964948133]
+offset_left = 522.0
+offset_top = 399.0
+offset_right = 839.0
+offset_bottom = 674.0
+texture = ExtResource("7_tklts")
+expand_mode = 1
 
 [connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="VBoxContainer/settings" to="." method="_on_settings_pressed"]

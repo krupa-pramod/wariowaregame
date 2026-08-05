@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dlcvv28bxk2fy"]
+
+[ext_resource type="Script" uid="uid://wis2nhmd5xw8" path="res://scenes/minigame_script.gd" id="1_22ed1"]
+[ext_resource type="Texture2D" uid="uid://drx43epis8of0" path="res://d31b117f3e387626eb1ae0bcf6f9f39a.jpg" id="2_0dp5x"]
+[ext_resource type="FontFile" uid="uid://bafc8ctegn8m6" path="res://PressStart2P-Regular.ttf" id="3_qfvgk"]
+
+[node name="Node2D" type="Node2D" unique_id=525575401]
+script = ExtResource("1_22ed1")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=968088408]
+offset_right = 1150.0
+offset_bottom = 644.0
+texture = ExtResource("2_0dp5x")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=711251985]
+offset_left = 936.0
+offset_top = 45.0
+offset_right = 1400.0
+offset_bottom = 411.0
+theme_override_fonts/normal_font = ExtResource("3_qfvgk")
+theme_override_font_sizes/normal_font_size = 42
+text = "0.0"

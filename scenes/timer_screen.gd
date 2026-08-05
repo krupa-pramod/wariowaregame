@@ -9,7 +9,7 @@ extends Node2D
 
 
 @onready var level: RichTextLabel = $Level
-@onready var timer: RichTextLabel = $Time
+@onready var timer: RichTextLabel = $Timer
 
 var time
 
@@ -43,8 +43,11 @@ func _process(delta: float) -> void:
 		0:
 			PotionContainer.hide()
 			
-	timer.text = str(time)
-	level.text = "Level" + str(Global.minigames_done)
+	timer.clear()
+	timer.append_text(str(time))
+	
+	level.clear()
+	level.append_text("Level " + str(Global.minigames_done))
 
 func Timer(start_time: float):
 	time = start_time
