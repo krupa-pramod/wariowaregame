@@ -1,8 +1,5 @@
-extends Node
-
-var minigames_done = 0
-var level_number = 1
-var lives = 5
+extends TextureButton
+@onready var parent = $".."
 
 
 # Called when the node enters the scene tree for the first time.
@@ -13,3 +10,8 @@ func _ready() -> void:
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
+
+
+func _on_pressed() -> void:
+	hide()
+	parent.buttons_pressed += 1

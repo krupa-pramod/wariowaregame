@@ -20,7 +20,7 @@ offset_right = 1392.0
 offset_bottom = 774.0
 theme_override_fonts/normal_font = ExtResource("2_a74lg")
 theme_override_font_sizes/normal_font_size = 42
-text = "Level #"
+text = "Level 1"
 
 [node name="Timer" type="RichTextLabel" parent="." unique_id=1829127815]
 offset_left = 967.0
@@ -30,6 +30,18 @@ offset_bottom = 745.0
 theme_override_fonts/normal_font = ExtResource("2_a74lg")
 theme_override_font_sizes/normal_font_size = 42
 text = "0.0"
+
+[node name="txt" type="RichTextLabel" parent="." unique_id=1112225315]
+offset_left = 567.0
+offset_top = 528.0
+offset_right = 1393.0
+offset_bottom = 935.0
+theme_override_colors/default_color = Color(0.7576755, 0.45352095, 0.5344141, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 20
+theme_override_fonts/normal_font = ExtResource("2_a74lg")
+theme_override_font_sizes/normal_font_size = 42
+text = "have a break!"
 
 [node name="PotionContainer" type="HBoxContainer" parent="." unique_id=1462620505]
 offset_left = 447.0

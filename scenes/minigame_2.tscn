@@ -1,0 +1,91 @@
+[gd_scene format=3 uid="uid://oc8xl87ffbpg"]
+
+[ext_resource type="Script" uid="uid://bufen0xa4s5al" path="res://scenes/minigame_2.gd" id="1_dqa6p"]
+[ext_resource type="Texture2D" uid="uid://61cl86kb3mam" path="res://1d692039e18d8d7818f9043a0de1b3e2.jpg" id="1_xdwh2"]
+[ext_resource type="Texture2D" uid="uid://c0fs13qefhexy" path="res://c06541680f8932e3af22bd66fc9079ef-removebg-preview.png" id="2_ju4f3"]
+[ext_resource type="Script" uid="uid://y38rv60e2iho" path="res://scenes/button_1.gd" id="3_uiylj"]
+[ext_resource type="PackedScene" uid="uid://dlcvv28bxk2fy" path="res://scenes/ThemedTimer.tscn" id="4_ksu6r"]
+[ext_resource type="Texture2D" uid="uid://vwuc5fwfxyl0" path="res://scenes/9d78e2a2e9a0cae5275bec6deb875029-removebg-preview.png" id="5_6co8m"]
+[ext_resource type="Texture2D" uid="uid://n2rmjmfk16tc" path="res://scenes/f0247d831f6d3b48a01fb6bee513c2f1-removebg-preview.png" id="6_tbdge"]
+[ext_resource type="Texture2D" uid="uid://qmwttqlts65c" path="res://scenes/024a8ab285a6184d48c828f120b8326d-removebg-preview.png" id="7_my5wa"]
+[ext_resource type="FontFile" uid="uid://bafc8ctegn8m6" path="res://PressStart2P-Regular.ttf" id="9_r0kah"]
+
+[node name="Node2D" type="Node2D" unique_id=1862634980]
+script = ExtResource("1_dqa6p")
+
+[node name="ScrollingBackground" type="Parallax2D" parent="." unique_id=319999560]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(100, 0)
+
+[node name="Background" type="TextureRect" parent="ScrollingBackground" unique_id=1621749385]
+offset_left = 4.0
+offset_top = -27.0
+offset_right = 1204.0
+offset_bottom = 648.0
+texture = ExtResource("1_xdwh2")
+
+[node name="Button_1" type="TextureButton" parent="." unique_id=495474195]
+offset_left = 64.0
+offset_top = 21.0
+offset_right = 280.0
+offset_bottom = 197.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("2_ju4f3")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("3_uiylj")
+
+[node name="Button_2" type="TextureButton" parent="." unique_id=171494469]
+offset_left = 114.0
+offset_top = 455.0
+offset_right = 330.0
+offset_bottom = 631.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("5_6co8m")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("3_uiylj")
+
+[node name="Button_3" type="TextureButton" parent="." unique_id=255756635]
+offset_left = 575.0
+offset_top = 85.0
+offset_right = 791.0
+offset_bottom = 261.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("6_tbdge")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("3_uiylj")
+
+[node name="Button_4" type="TextureButton" parent="." unique_id=295036158]
+offset_left = 900.0
+offset_top = 361.0
+offset_right = 1116.0
+offset_bottom = 537.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture_normal = ExtResource("7_my5wa")
+ignore_texture_size = true
+stretch_mode = 0
+script = ExtResource("3_uiylj")
+
+[node name="ThemedTimer" parent="." unique_id=525575401 instance=ExtResource("4_ksu6r")]
+position = Vector2(-591, 271)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1962466795]
+offset_left = 675.0
+offset_top = 573.0
+offset_right = 1161.0
+offset_bottom = 748.0
+theme_override_colors/default_color = Color(0.9872883, 0, 0.5337121, 1)
+theme_override_fonts/normal_font = ExtResource("9_r0kah")
+theme_override_font_sizes/normal_font_size = 32
+text = "get through the school day!"
+
+[connection signal="pressed" from="Button_1" to="Button_1" method="_on_pressed"]
+[connection signal="pressed" from="Button_2" to="Button_2" method="_on_pressed"]
+[connection signal="pressed" from="Button_3" to="Button_3" method="_on_pressed"]
+[connection signal="pressed" from="Button_4" to="Button_4" method="_on_pressed"]
