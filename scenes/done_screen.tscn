@@ -1,3 +1,73 @@
 [gd_scene format=3 uid="uid://c7dweh6n07wvj"]
 
-[node name="Node2D" type="Node2D" unique_id=185205005]
+[ext_resource type="Script" uid="uid://buvkmy2a5v2vk" path="res://scenes/done_screen.gd" id="1_k66lo"]
+[ext_resource type="PackedScene" uid="uid://cwmqbkejumjhl" path="res://scenes/background.tscn" id="1_uqm27"]
+[ext_resource type="FontFile" uid="uid://bafc8ctegn8m6" path="res://PressStart2P-Regular.ttf" id="2_k66lo"]
+
+[node name="Node2D" type="Node2D" unique_id=483096287]
+script = ExtResource("1_k66lo")
+
+[node name="Background" parent="." unique_id=2112275137 instance=ExtResource("1_uqm27")]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=722547176]
+offset_left = 47.0
+offset_top = 369.0
+offset_right = 447.0
+offset_bottom = 534.0
+theme_override_colors/default_color = Color(0.8901961, 0, 0.38039216, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/normal_font = ExtResource("2_k66lo")
+theme_override_font_sizes/normal_font_size = 40
+text = "school was a nightmare!"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="." unique_id=1732407528]
+offset_left = 44.0
+offset_top = 501.0
+offset_right = 444.0
+offset_bottom = 666.0
+theme_override_colors/default_color = Color(0.8901961, 0, 0.38039216, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/normal_font = ExtResource("2_k66lo")
+theme_override_font_sizes/normal_font_size = 25
+text = "you lost..."
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="." unique_id=891757191]
+offset_left = 529.0
+offset_top = 337.0
+offset_right = 929.0
+offset_bottom = 502.0
+theme_override_colors/default_color = Color(0.8901961, 0, 0.38039216, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/normal_font = ExtResource("2_k66lo")
+theme_override_font_sizes/normal_font_size = 25
+text = "try again?"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=1392753561]
+offset_left = 527.0
+offset_top = 371.0
+offset_right = 795.0
+offset_bottom = 624.0
+
+[node name="start" type="Button" parent="VBoxContainer" unique_id=1645953383]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.9938862, 0.5394586, 0.85115594, 1)
+theme_override_colors/font_outline_color = Color(0.70118403, 0.098039456, 0.30859077, 1)
+theme_override_constants/outline_size = 14
+theme_override_fonts/font = ExtResource("2_k66lo")
+theme_override_font_sizes/font_size = 19
+text = "sure!"
+
+[node name="quit" type="Button" parent="VBoxContainer" unique_id=164417681]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.9938862, 0.5394586, 0.85115594, 1)
+theme_override_colors/font_outline_color = Color(0.70118403, 0.098039456, 0.30859077, 1)
+theme_override_constants/outline_size = 14
+theme_override_fonts/font = ExtResource("2_k66lo")
+theme_override_font_sizes/font_size = 19
+text = "i give up..."
+
+[connection signal="pressed" from="VBoxContainer/start" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit" to="." method="_on_quit_pressed"]

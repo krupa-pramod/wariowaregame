@@ -18,13 +18,17 @@ func _process(delta: float) -> void:
 	if timer_end:
 		print("changing scene now")
 		timer_end = false
-		Global.minigames_done -= 1
 		Global.lives -= 1
-		get_tree().change_scene_to_file("res://scenes/level_scene.tscn")
+
+		if Global.lives <= 0:
+			get_tree().change_scene_to_file("res://scenes/done_screen.tscn")
+		else:
+			get_tree().change_scene_to_file("res://scenes/level_scene.tscn")
 
 	elif friends_collected >= 3:
-		if Global.minigames_done > 3:
-			get_tree().change_scene_to_file("res://scenes/done_screen.tscn")
+		Global.current_minigame += 1
+		if Global.current_minigame > 3:
+			get_tree().change_scene_to_file("res://scenes/win_screen.tscn")
 		else:
 			get_tree().change_scene_to_file("res://scenes/level_scene.tscn")
 

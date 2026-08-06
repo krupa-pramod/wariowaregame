@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://byc115itv4mpx"]
 
-[ext_resource type="Texture2D" uid="uid://c44fkjy0ixw34" path="res://4af9df8e3319de87064d476f341cc401.jpg" id="1_fgkus"]
 [ext_resource type="Script" uid="uid://cmepkbat8xol5" path="res://scenes/title_screen.gd" id="1_sa3yf"]
+[ext_resource type="PackedScene" uid="uid://cwmqbkejumjhl" path="res://scenes/background.tscn" id="2_3yumr"]
 [ext_resource type="FontFile" uid="uid://bafc8ctegn8m6" path="res://PressStart2P-Regular.ttf" id="3_s4lrb"]
 [ext_resource type="Texture2D" uid="uid://ds058tm4ejrl2" path="res://636b4d0277fe2b0f95b3b75c6433ad37-removebg-preview.png" id="4_3yumr"]
 [ext_resource type="Texture2D" uid="uid://m6c68g8wufwj" path="res://cd846ae165139611a2637409bd216215-removebg-preview.png" id="5_cs5ya"]
@@ -11,12 +11,7 @@
 [node name="TitleScreen" type="Node2D" unique_id=1133155765]
 script = ExtResource("1_sa3yf")
 
-[node name="Background" type="TextureRect" parent="." unique_id=1025769314]
-offset_left = 9.0
-offset_top = 5.0
-offset_right = 1154.0
-offset_bottom = 794.0
-texture = ExtResource("1_fgkus")
+[node name="Background" parent="." unique_id=2112275137 instance=ExtResource("2_3yumr")]
 
 [node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1735017083]
 offset_left = 52.0

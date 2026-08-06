@@ -15,18 +15,22 @@ var time
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	print("Before:", Global.minigames_done)
+	
+	Potion.show()
+	Potion2.show()
+	Potion3.show()
+	Potion4.show()
+	Potion5.show()
+	
 	await Timer(5.0)
-	print("After timer:", Global.minigames_done)
-
-	if Global.minigames_done < 3:
-		Global.minigames_done += 1
-		print("Starting minigame ", Global.minigames_done)
+	if Global.lives <= 0:
+		get_tree().change_scene_to_file("res://scenes/done_screen.tscn")
+	elif Global.current_minigame <= 3:
 		get_tree().change_scene_to_file(
-			"res://scenes/minigame_" + str(Global.minigames_done) + ".tscn"
-		)
+		"res://scenes/minigame_" + str(Global.current_minigame) + ".tscn"
+	)
 	else:
-		get_tree().change_scene_to_file("res://scenes/title_screen.tscn")
+		get_tree().change_scene_to_file("res://scenes/win_screen.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
@@ -52,7 +56,7 @@ func _process(delta: float) -> void:
 	timer.append_text(str(time))
 	
 	level.clear()
-	level.append_text("Level " + str(Global.minigames_done + 1))
+	level.append_text("Level " + str(Global.current_minigame))
 
 func Timer(start_time: float):
 	time = start_time

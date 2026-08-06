@@ -1,0 +1,93 @@
+[gd_scene format=3 uid="uid://cx4ej80hvgqbp"]
+
+[ext_resource type="PackedScene" uid="uid://cwmqbkejumjhl" path="res://scenes/background.tscn" id="1_xmg1o"]
+[ext_resource type="FontFile" uid="uid://bafc8ctegn8m6" path="res://PressStart2P-Regular.ttf" id="2_gsw8x"]
+[ext_resource type="Texture2D" uid="uid://ds058tm4ejrl2" path="res://636b4d0277fe2b0f95b3b75c6433ad37-removebg-preview.png" id="3_jkhwn"]
+[ext_resource type="Script" uid="uid://mb8x8pxoj5la" path="res://scenes/start.gd" id="4_jkhwn"]
+
+[node name="Node2D" type="Node2D" unique_id=1837854724]
+
+[node name="Background" parent="." unique_id=2112275137 instance=ExtResource("1_xmg1o")]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=440512378]
+offset_left = 31.0
+offset_top = 154.0
+offset_right = 796.0
+offset_bottom = 642.0
+color = Color(0, 0, 0, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=1537964185]
+offset_left = 581.0
+offset_top = 250.0
+offset_right = 766.0
+offset_bottom = 330.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1048440839]
+offset_left = 69.0
+offset_top = 181.0
+offset_right = 492.0
+offset_bottom = 376.0
+theme_override_colors/default_color = Color(0.99975544, 0.9608292, 0.9699654, 1)
+theme_override_colors/font_outline_color = Color(0.84266603, 0.07557758, 0.42791057, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/normal_font = ExtResource("2_gsw8x")
+theme_override_font_sizes/normal_font_size = 50
+text = "welcome 2 high skl..."
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="." unique_id=786286811]
+offset_left = 71.0
+offset_top = 348.0
+offset_right = 408.0
+offset_bottom = 614.0
+theme_override_colors/default_color = Color(0.99975544, 0.9608292, 0.9699654, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/normal_font = ExtResource("2_gsw8x")
+theme_override_font_sizes/normal_font_size = 20
+text = "navigate a day as a student at a brand-new highschool! you will have to make friends, quickly juggle classes, and more! don't worry... there's locker breaks :-) "
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="." unique_id=169572097]
+offset_left = 600.0
+offset_top = 271.0
+offset_right = 937.0
+offset_bottom = 537.0
+theme_override_colors/default_color = Color(0.99975544, 0.9608292, 0.9699654, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/normal_font = ExtResource("2_gsw8x")
+theme_override_font_sizes/normal_font_size = 14
+text = "pls help!!
+- xx stacy"
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1110283743]
+position = Vector2(533.00006, 351)
+scale = Vector2(0.4480956, 0.4080343)
+texture = ExtResource("3_jkhwn")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=906468131]
+offset_left = 474.0
+offset_top = 561.0
+offset_right = 794.0
+offset_bottom = 814.0
+
+[node name="start" type="Button" parent="VBoxContainer" unique_id=1278582407]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.9938862, 0.5394586, 0.85115594, 1)
+theme_override_colors/font_outline_color = Color(0.70118403, 0.098039456, 0.30859077, 1)
+theme_override_constants/outline_size = 14
+theme_override_fonts/font = ExtResource("2_gsw8x")
+theme_override_font_sizes/font_size = 26
+text = "i'm ready!"
+script = ExtResource("4_jkhwn")
+
+[node name="quit" type="Button" parent="VBoxContainer" unique_id=1530080300]
+layout_mode = 2
+theme_override_colors/font_hover_color = Color(0.9938862, 0.5394586, 0.85115594, 1)
+theme_override_colors/font_outline_color = Color(0.70118403, 0.098039456, 0.30859077, 1)
+theme_override_constants/outline_size = 14
+theme_override_fonts/font = ExtResource("2_gsw8x")
+theme_override_font_sizes/font_size = 26
+text = "um no thanks"
+
+[connection signal="pressed" from="VBoxContainer/start" to="VBoxContainer/start" method="_on_pressed"]
+[connection signal="pressed" from="VBoxContainer/quit" to="VBoxContainer/start" method="_on_quit_pressed"]
