@@ -13,6 +13,7 @@ func _ready() -> void:
 	bags_set.hide()
 	glasses_set.hide()
 	await themed_timer.Timer(7.0)
+	themed_timer.hide()
 	start_selection()
 
 
@@ -33,8 +34,7 @@ func _on_dress2_pressed() -> void:
 func _on_dress3_pressed() -> void:
 	lose()
 
-func _on_dress4_pressed() -> void:
-	print("correct dress clicked")
+func _on_texture_button_pressed() -> void:
 	dress_set.hide()
 	boots_set.show()
 
@@ -75,7 +75,7 @@ func _on_glasses2_pressed() -> void:
 func _on_glass3_pressed() -> void:
 	lose()
 
-func _on_glass4_pressed() -> void:
+func _on_texture_button2_pressed() -> void:
 	get_tree().change_scene_to_file("res://scenes/win_screen.tscn")
 
 

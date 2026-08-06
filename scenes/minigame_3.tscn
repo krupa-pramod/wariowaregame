@@ -84,10 +84,10 @@ texture = ExtResource("7_6pv2x")
 expand_mode = 1
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="memory" unique_id=378393127]
-offset_left = 780.0
-offset_top = 110.0
-offset_right = 1266.0
-offset_bottom = 285.0
+offset_left = 768.0
+offset_top = 113.0
+offset_right = 1254.0
+offset_bottom = 288.0
 theme_override_colors/default_color = Color(0.9872883, 0, 0.5337121, 1)
 theme_override_fonts/normal_font = ExtResource("3_4c0c6")
 theme_override_font_sizes/normal_font_size = 22
@@ -126,25 +126,25 @@ size_flags_vertical = 0
 texture_normal = ExtResource("10_fi2gf")
 stretch_mode = 0
 
-[node name="TextureRect4" type="TextureButton" parent="dress_set" unique_id=648892568]
-custom_maximum_size = Vector2(200, 200)
-offset_left = 1085.0
-offset_top = 147.0
-offset_right = 1285.0
-offset_bottom = 347.0
-size_flags_vertical = 0
-texture_normal = ExtResource("4_weftu")
-stretch_mode = 0
-
 [node name="RichTextLabel2" type="RichTextLabel" parent="dress_set" unique_id=1178395686]
-offset_left = 854.0
-offset_top = 112.0
-offset_right = 1340.0
-offset_bottom = 287.0
+offset_left = 834.0
+offset_top = 119.0
+offset_right = 1320.0
+offset_bottom = 294.0
 theme_override_colors/default_color = Color(0.9872883, 0, 0.5337121, 1)
 theme_override_fonts/normal_font = ExtResource("3_4c0c6")
 theme_override_font_sizes/normal_font_size = 22
 text = "which dress?"
+
+[node name="TextureButton" type="TextureButton" parent="dress_set" unique_id=1013063742]
+custom_maximum_size = Vector2(300, 300)
+offset_left = 1062.0
+offset_top = 122.0
+offset_right = 1362.0
+offset_bottom = 422.0
+texture_normal = ExtResource("4_weftu")
+ignore_texture_size = true
+stretch_mode = 0
 
 [node name="boots_set" type="Node2D" parent="." unique_id=1940219100]
 position = Vector2(-430, 62)
@@ -190,10 +190,10 @@ texture_normal = ExtResource("12_7ecev")
 stretch_mode = 0
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="boots_set" unique_id=394752366]
-offset_left = 854.0
-offset_top = 112.0
-offset_right = 1340.0
-offset_bottom = 287.0
+offset_left = 851.0
+offset_top = 118.0
+offset_right = 1337.0
+offset_bottom = 293.0
 theme_override_colors/default_color = Color(0.9872883, 0, 0.5337121, 1)
 theme_override_fonts/normal_font = ExtResource("3_4c0c6")
 theme_override_font_sizes/normal_font_size = 22
@@ -243,10 +243,10 @@ texture_normal = ExtResource("16_kybay")
 stretch_mode = 0
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="bag_set" unique_id=61898489]
-offset_left = 854.0
-offset_top = 112.0
-offset_right = 1340.0
-offset_bottom = 287.0
+offset_left = 839.0
+offset_top = 119.0
+offset_right = 1325.0
+offset_bottom = 294.0
 theme_override_colors/default_color = Color(0.9872883, 0, 0.5337121, 1)
 theme_override_fonts/normal_font = ExtResource("3_4c0c6")
 theme_override_font_sizes/normal_font_size = 22
@@ -285,30 +285,30 @@ size_flags_vertical = 0
 texture_normal = ExtResource("19_ud0ty")
 stretch_mode = 0
 
-[node name="TextureRect4" type="TextureButton" parent="glasses_set" unique_id=46344663]
-custom_maximum_size = Vector2(200, 200)
-offset_left = 1079.0
-offset_top = 182.0
-offset_right = 1279.0
-offset_bottom = 382.0
-size_flags_vertical = 0
-texture_normal = ExtResource("7_6pv2x")
-stretch_mode = 0
-
 [node name="RichTextLabel2" type="RichTextLabel" parent="glasses_set" unique_id=1018051437]
-offset_left = 854.0
-offset_top = 112.0
-offset_right = 1340.0
-offset_bottom = 287.0
+offset_left = 845.0
+offset_top = 114.0
+offset_right = 1331.0
+offset_bottom = 289.0
 theme_override_colors/default_color = Color(0.9872883, 0, 0.5337121, 1)
 theme_override_fonts/normal_font = ExtResource("3_4c0c6")
 theme_override_font_sizes/normal_font_size = 22
 text = "which glasses?"
 
+[node name="TextureButton" type="TextureButton" parent="glasses_set" unique_id=102525328]
+custom_maximum_size = Vector2(300, 300)
+offset_left = 1047.0
+offset_top = 162.0
+offset_right = 1347.0
+offset_bottom = 462.0
+texture_normal = ExtResource("7_6pv2x")
+ignore_texture_size = true
+stretch_mode = 0
+
 [connection signal="pressed" from="dress_set/TextureRect" to="." method="_on_dress1_pressed"]
 [connection signal="pressed" from="dress_set/TextureRect2" to="." method="_on_dress2_pressed"]
 [connection signal="pressed" from="dress_set/TextureRect3" to="." method="_on_dress3_pressed"]
-[connection signal="pressed" from="dress_set/TextureRect4" to="." method="_on_dress4_pressed"]
+[connection signal="pressed" from="dress_set/TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="boots_set/TextureRect" to="." method="_on_boots1_pressed"]
 [connection signal="pressed" from="boots_set/TextureRect2" to="." method="_on_boots2_pressed"]
 [connection signal="pressed" from="boots_set/TextureRect3" to="." method="_on_boots3_pressed"]
@@ -320,4 +320,4 @@ text = "which glasses?"
 [connection signal="pressed" from="glasses_set/TextureRect" to="." method="_on_glass1_pressed"]
 [connection signal="pressed" from="glasses_set/TextureRect2" to="." method="_on_glasses2_pressed"]
 [connection signal="pressed" from="glasses_set/TextureRect3" to="." method="_on_glass3_pressed"]
-[connection signal="pressed" from="glasses_set/TextureRect4" to="." method="_on_glass4_pressed"]
+[connection signal="pressed" from="glasses_set/TextureButton" to="." method="_on_texture_button2_pressed"]
