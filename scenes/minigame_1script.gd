@@ -27,10 +27,7 @@ func _process(delta: float) -> void:
 
 	elif friends_collected >= 3:
 		Global.current_minigame += 1
-		if Global.current_minigame > 3:
-			get_tree().change_scene_to_file("res://scenes/win_screen.tscn")
-		else:
-			get_tree().change_scene_to_file("res://scenes/level_scene.tscn")
+		get_tree().change_scene_to_file("res://scenes/level_scene.tscn")
 
 func friends_collect() -> void: # cool function that you connect to those garlics
 	friends_collected = friends_collected +1

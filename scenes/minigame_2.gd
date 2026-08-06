@@ -13,10 +13,7 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if buttons_pressed == 4:
 		Global.current_minigame += 1
-		if Global.current_minigmae > 3:
-			get_tree().change_scene_to_file("res://scenes/done_screen.tscn")
-		else:
-			get_tree().change_scene_to_file("res://scenes/level_scene.tscn")
+		get_tree().change_scene_to_file("res://scenes/level_scene.tscn")
 
 	if timer_end:
 		Global.lives -= 1

@@ -1,0 +1,323 @@
+[gd_scene format=3 uid="uid://c1u6rh6knkwa0"]
+
+[ext_resource type="Texture2D" uid="uid://61cl86kb3mam" path="res://1d692039e18d8d7818f9043a0de1b3e2.jpg" id="1_ijwtv"]
+[ext_resource type="Script" uid="uid://b8asoy83ctjy0" path="res://scenes/minigame_3.gd" id="1_wef8s"]
+[ext_resource type="PackedScene" uid="uid://dlcvv28bxk2fy" path="res://scenes/ThemedTimer.tscn" id="2_vhxdv"]
+[ext_resource type="FontFile" uid="uid://bafc8ctegn8m6" path="res://PressStart2P-Regular.ttf" id="3_4c0c6"]
+[ext_resource type="Texture2D" uid="uid://bq40dyo5rfw8c" path="res://scenes/4914a4222555b5eca17596d65b6f738a-removebg-preview.png" id="4_weftu"]
+[ext_resource type="Texture2D" uid="uid://b02hl4vasxxfa" path="res://scenes/0d7189b4d4aec94433ebc6f2f6cf704e-removebg-preview.png" id="5_wef8s"]
+[ext_resource type="Texture2D" uid="uid://bqh4j3ujora4r" path="res://scenes/8a2328322b5e9cdd3030af21f808b223-removebg-preview.png" id="6_lok3p"]
+[ext_resource type="Texture2D" uid="uid://b086xkhynljjw" path="res://scenes/6c37901f1b3d125dcd272f95a2ad53c1-removebg-preview.png" id="7_6pv2x"]
+[ext_resource type="Texture2D" uid="uid://bvh1injsknf6n" path="res://scenes/0b7aafe701a827a81da590fd068d58b5-removebg-preview.png" id="8_minpw"]
+[ext_resource type="Texture2D" uid="uid://cjgt1ts0mcs44" path="res://aa317fd26158fe828990183cd01c18b6-removebg-preview.png" id="9_r3oi8"]
+[ext_resource type="Texture2D" uid="uid://cyv3js5kopc8n" path="res://2fc54881e8775aa95cbf9beefce62cd3-removebg-preview.png" id="10_fi2gf"]
+[ext_resource type="Texture2D" uid="uid://dfhdwsnqcldl1" path="res://118c5495a85158cf4564edcd7508e7f8-removebg-preview.png" id="11_gkqpc"]
+[ext_resource type="Texture2D" uid="uid://ljl1r87re6p6" path="res://1ccacff4954eb9816a9aa74ab30458c7-removebg-preview.png" id="12_7ecev"]
+[ext_resource type="Texture2D" uid="uid://52s73cdt2um0" path="res://4e7bf90b06099075c01de1faf18a35ff-removebg-preview.png" id="13_klr2t"]
+[ext_resource type="Texture2D" uid="uid://by1ulg7doxm3j" path="res://122f2e77f2b444ccaf43e945b9a900dc-removebg-preview.png" id="14_rsktl"]
+[ext_resource type="Texture2D" uid="uid://ccpqdbr057al2" path="res://9c91a6e78988502a8cddd4eee6d8af96-removebg-preview.png" id="15_02qem"]
+[ext_resource type="Texture2D" uid="uid://b1ghgqtcjixbb" path="res://ebdd43e66061474d6f6c2d65aa3da9c1-removebg-preview.png" id="16_kybay"]
+[ext_resource type="Texture2D" uid="uid://os8j33fqwk16" path="res://f4106d1f1c5c0b6ecc79affa08204186-removebg-preview.png" id="17_8q1gs"]
+[ext_resource type="Texture2D" uid="uid://cahhghywd5hea" path="res://8d1da8c6f52faa6dfdf238ca43b30ddc-removebg-preview.png" id="18_b7s57"]
+[ext_resource type="Texture2D" uid="uid://bcxa6d0rifkrf" path="res://b87c85b7b6b1c53ff3886ca7e8ae9a3a-removebg-preview.png" id="19_ud0ty"]
+
+[node name="Node2D" type="Node2D" unique_id=1903537961]
+script = ExtResource("1_wef8s")
+
+[node name="ScrollingBackground" type="Parallax2D" parent="." unique_id=170635161]
+repeat_size = Vector2(1000, 0)
+autoscroll = Vector2(100, 0)
+
+[node name="Background" type="TextureRect" parent="ScrollingBackground" unique_id=1880555200]
+offset_left = 4.0
+offset_top = -27.0
+offset_right = 1204.0
+offset_bottom = 648.0
+texture = ExtResource("1_ijwtv")
+
+[node name="ThemedTimer" parent="." unique_id=525575401 instance=ExtResource("2_vhxdv")]
+position = Vector2(-430, 62)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=259706296]
+offset_left = 331.0
+offset_top = 43.0
+offset_right = 817.0
+offset_bottom = 218.0
+theme_override_colors/default_color = Color(0.9872883, 0, 0.5337121, 1)
+theme_override_fonts/normal_font = ExtResource("3_4c0c6")
+theme_override_font_sizes/normal_font_size = 32
+text = "time 4 a party!"
+
+[node name="memory" type="Node2D" parent="." unique_id=1461344099]
+position = Vector2(-430, 62)
+
+[node name="TextureRect" type="TextureRect" parent="memory" unique_id=1604973731]
+offset_left = 700.0
+offset_top = 124.0
+offset_right = 965.0
+offset_bottom = 432.0
+texture = ExtResource("4_weftu")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="memory" unique_id=359444083]
+offset_left = 1101.0
+offset_top = 158.0
+offset_right = 1292.0
+offset_bottom = 340.0
+texture = ExtResource("5_wef8s")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="memory" unique_id=378442644]
+offset_left = 757.0
+offset_top = 363.0
+offset_right = 920.0
+offset_bottom = 531.0
+texture = ExtResource("6_lok3p")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="memory" unique_id=303687236]
+offset_left = 1075.0
+offset_top = 326.0
+offset_right = 1340.0
+offset_bottom = 634.0
+texture = ExtResource("7_6pv2x")
+expand_mode = 1
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="memory" unique_id=378393127]
+offset_left = 780.0
+offset_top = 110.0
+offset_right = 1266.0
+offset_bottom = 285.0
+theme_override_colors/default_color = Color(0.9872883, 0, 0.5337121, 1)
+theme_override_fonts/normal_font = ExtResource("3_4c0c6")
+theme_override_font_sizes/normal_font_size = 22
+text = "remember the outfit..."
+
+[node name="dress_set" type="Node2D" parent="." unique_id=1901179312]
+position = Vector2(-430, 62)
+
+[node name="TextureRect" type="TextureButton" parent="dress_set" unique_id=1075328178]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 732.0
+offset_top = 156.0
+offset_right = 932.0
+offset_bottom = 356.0
+size_flags_vertical = 0
+texture_normal = ExtResource("8_minpw")
+stretch_mode = 0
+
+[node name="TextureRect2" type="TextureButton" parent="dress_set" unique_id=64227217]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 1102.0
+offset_top = 344.0
+offset_right = 1302.0
+offset_bottom = 544.0
+size_flags_vertical = 0
+texture_normal = ExtResource("9_r3oi8")
+stretch_mode = 0
+
+[node name="TextureRect3" type="TextureButton" parent="dress_set" unique_id=826850909]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 732.0
+offset_top = 359.0
+offset_right = 932.0
+offset_bottom = 559.0
+size_flags_vertical = 0
+texture_normal = ExtResource("10_fi2gf")
+stretch_mode = 0
+
+[node name="TextureRect4" type="TextureButton" parent="dress_set" unique_id=648892568]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 1085.0
+offset_top = 147.0
+offset_right = 1285.0
+offset_bottom = 347.0
+size_flags_vertical = 0
+texture_normal = ExtResource("4_weftu")
+stretch_mode = 0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="dress_set" unique_id=1178395686]
+offset_left = 854.0
+offset_top = 112.0
+offset_right = 1340.0
+offset_bottom = 287.0
+theme_override_colors/default_color = Color(0.9872883, 0, 0.5337121, 1)
+theme_override_fonts/normal_font = ExtResource("3_4c0c6")
+theme_override_font_sizes/normal_font_size = 22
+text = "which dress?"
+
+[node name="boots_set" type="Node2D" parent="." unique_id=1940219100]
+position = Vector2(-430, 62)
+
+[node name="TextureRect" type="TextureButton" parent="boots_set" unique_id=1916365219]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 732.0
+offset_top = 156.0
+offset_right = 932.0
+offset_bottom = 356.0
+size_flags_vertical = 0
+texture_normal = ExtResource("11_gkqpc")
+stretch_mode = 0
+
+[node name="TextureRect2" type="TextureButton" parent="boots_set" unique_id=1348698802]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 1102.0
+offset_top = 344.0
+offset_right = 1302.0
+offset_bottom = 544.0
+size_flags_vertical = 0
+texture_normal = ExtResource("13_klr2t")
+stretch_mode = 0
+
+[node name="TextureRect3" type="TextureButton" parent="boots_set" unique_id=1298871388]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 732.0
+offset_top = 359.0
+offset_right = 932.0
+offset_bottom = 559.0
+size_flags_vertical = 0
+texture_normal = ExtResource("5_wef8s")
+stretch_mode = 0
+
+[node name="TextureRect4" type="TextureButton" parent="boots_set" unique_id=1385648215]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 1085.0
+offset_top = 147.0
+offset_right = 1285.0
+offset_bottom = 347.0
+size_flags_vertical = 0
+texture_normal = ExtResource("12_7ecev")
+stretch_mode = 0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="boots_set" unique_id=394752366]
+offset_left = 854.0
+offset_top = 112.0
+offset_right = 1340.0
+offset_bottom = 287.0
+theme_override_colors/default_color = Color(0.9872883, 0, 0.5337121, 1)
+theme_override_fonts/normal_font = ExtResource("3_4c0c6")
+theme_override_font_sizes/normal_font_size = 22
+text = "which boots?"
+
+[node name="bag_set" type="Node2D" parent="." unique_id=1592071918]
+position = Vector2(-430, 62)
+
+[node name="TextureRect" type="TextureButton" parent="bag_set" unique_id=1256931089]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 732.0
+offset_top = 156.0
+offset_right = 932.0
+offset_bottom = 356.0
+size_flags_vertical = 0
+texture_normal = ExtResource("6_lok3p")
+stretch_mode = 0
+
+[node name="TextureRect2" type="TextureButton" parent="bag_set" unique_id=1436601333]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 1102.0
+offset_top = 344.0
+offset_right = 1302.0
+offset_bottom = 544.0
+size_flags_vertical = 0
+texture_normal = ExtResource("14_rsktl")
+stretch_mode = 0
+
+[node name="TextureRect3" type="TextureButton" parent="bag_set" unique_id=788647270]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 732.0
+offset_top = 359.0
+offset_right = 932.0
+offset_bottom = 559.0
+size_flags_vertical = 0
+texture_normal = ExtResource("15_02qem")
+stretch_mode = 0
+
+[node name="TextureRect4" type="TextureButton" parent="bag_set" unique_id=305187605]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 1085.0
+offset_top = 147.0
+offset_right = 1285.0
+offset_bottom = 347.0
+size_flags_vertical = 0
+texture_normal = ExtResource("16_kybay")
+stretch_mode = 0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="bag_set" unique_id=61898489]
+offset_left = 854.0
+offset_top = 112.0
+offset_right = 1340.0
+offset_bottom = 287.0
+theme_override_colors/default_color = Color(0.9872883, 0, 0.5337121, 1)
+theme_override_fonts/normal_font = ExtResource("3_4c0c6")
+theme_override_font_sizes/normal_font_size = 22
+text = "which bag?"
+
+[node name="glasses_set" type="Node2D" parent="." unique_id=228954711]
+position = Vector2(-430, 62)
+
+[node name="TextureRect" type="TextureButton" parent="glasses_set" unique_id=1159302781]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 732.0
+offset_top = 156.0
+offset_right = 932.0
+offset_bottom = 356.0
+size_flags_vertical = 0
+texture_normal = ExtResource("17_8q1gs")
+stretch_mode = 0
+
+[node name="TextureRect2" type="TextureButton" parent="glasses_set" unique_id=1422768725]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 1102.0
+offset_top = 344.0
+offset_right = 1302.0
+offset_bottom = 544.0
+size_flags_vertical = 0
+texture_normal = ExtResource("18_b7s57")
+stretch_mode = 0
+
+[node name="TextureRect3" type="TextureButton" parent="glasses_set" unique_id=1226692507]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 732.0
+offset_top = 359.0
+offset_right = 932.0
+offset_bottom = 559.0
+size_flags_vertical = 0
+texture_normal = ExtResource("19_ud0ty")
+stretch_mode = 0
+
+[node name="TextureRect4" type="TextureButton" parent="glasses_set" unique_id=46344663]
+custom_maximum_size = Vector2(200, 200)
+offset_left = 1079.0
+offset_top = 182.0
+offset_right = 1279.0
+offset_bottom = 382.0
+size_flags_vertical = 0
+texture_normal = ExtResource("7_6pv2x")
+stretch_mode = 0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="glasses_set" unique_id=1018051437]
+offset_left = 854.0
+offset_top = 112.0
+offset_right = 1340.0
+offset_bottom = 287.0
+theme_override_colors/default_color = Color(0.9872883, 0, 0.5337121, 1)
+theme_override_fonts/normal_font = ExtResource("3_4c0c6")
+theme_override_font_sizes/normal_font_size = 22
+text = "which glasses?"
+
+[connection signal="pressed" from="dress_set/TextureRect" to="." method="_on_dress1_pressed"]
+[connection signal="pressed" from="dress_set/TextureRect2" to="." method="_on_dress2_pressed"]
+[connection signal="pressed" from="dress_set/TextureRect3" to="." method="_on_dress3_pressed"]
+[connection signal="pressed" from="dress_set/TextureRect4" to="." method="_on_dress4_pressed"]
+[connection signal="pressed" from="boots_set/TextureRect" to="." method="_on_boots1_pressed"]
+[connection signal="pressed" from="boots_set/TextureRect2" to="." method="_on_boots2_pressed"]
+[connection signal="pressed" from="boots_set/TextureRect3" to="." method="_on_boots3_pressed"]
+[connection signal="pressed" from="boots_set/TextureRect4" to="." method="_on_boots4_pressed"]
+[connection signal="pressed" from="bag_set/TextureRect" to="." method="_on_bag1_pressed"]
+[connection signal="pressed" from="bag_set/TextureRect2" to="." method="_on_bag2_pressed"]
+[connection signal="pressed" from="bag_set/TextureRect3" to="." method="_on_bag3_pressed"]
+[connection signal="pressed" from="bag_set/TextureRect4" to="." method="_on_bag4_pressed"]
+[connection signal="pressed" from="glasses_set/TextureRect" to="." method="_on_glass1_pressed"]
+[connection signal="pressed" from="glasses_set/TextureRect2" to="." method="_on_glasses2_pressed"]
+[connection signal="pressed" from="glasses_set/TextureRect3" to="." method="_on_glass3_pressed"]
+[connection signal="pressed" from="glasses_set/TextureRect4" to="." method="_on_glass4_pressed"]
