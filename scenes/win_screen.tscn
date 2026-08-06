@@ -1,3 +1,93 @@
 [gd_scene format=3 uid="uid://tfvorjiomo0n"]
 
+[ext_resource type="Script" uid="uid://cqopq8kq5opvu" path="res://scenes/win_screen.gd" id="1_2l6cc"]
+[ext_resource type="PackedScene" uid="uid://cwmqbkejumjhl" path="res://scenes/background.tscn" id="2_e41g7"]
+[ext_resource type="FontFile" uid="uid://bafc8ctegn8m6" path="res://PressStart2P-Regular.ttf" id="3_0lrm4"]
+[ext_resource type="Texture2D" uid="uid://ds058tm4ejrl2" path="res://636b4d0277fe2b0f95b3b75c6433ad37-removebg-preview.png" id="4_bqn3h"]
+[ext_resource type="Texture2D" uid="uid://m6c68g8wufwj" path="res://cd846ae165139611a2637409bd216215-removebg-preview.png" id="5_qnnn4"]
+[ext_resource type="Texture2D" uid="uid://cewgn26o4afxc" path="res://16ed7f4bf99063cde73e3a8cff3a76c6-removebg-preview.png" id="6_doie2"]
+[ext_resource type="Texture2D" uid="uid://dycjryi3ifuin" path="res://5eee54a0115fe4d44df7f6450388f97a-removebg-preview.png" id="7_r6ob7"]
+
 [node name="Node2D" type="Node2D" unique_id=1910648955]
+script = ExtResource("1_2l6cc")
+
+[node name="Background" parent="." unique_id=2112275137 instance=ExtResource("2_e41g7")]
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Background" unique_id=1580945416]
+layout_mode = 0
+offset_left = 47.0
+offset_top = 369.0
+offset_right = 447.0
+offset_bottom = 534.0
+theme_override_colors/default_color = Color(0.8901961, 0, 0.38039216, 1)
+theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 15
+theme_override_fonts/normal_font = ExtResource("3_0lrm4")
+theme_override_font_sizes/normal_font_size = 40
+text = "you survived high school!!"
+
+[node name="quit" type="Button" parent="." unique_id=1826792157]
+offset_left = 157.0
+offset_top = 551.0
+offset_right = 425.0
+offset_bottom = 578.0
+theme_override_colors/font_hover_color = Color(0.9938862, 0.5394586, 0.85115594, 1)
+theme_override_colors/font_outline_color = Color(0.70118403, 0.098039456, 0.30859077, 1)
+theme_override_constants/outline_size = 14
+theme_override_fonts/font = ExtResource("3_0lrm4")
+theme_override_font_sizes/font_size = 19
+text = "ok!"
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1081673759]
+offset_left = 470.0
+offset_top = 438.0
+offset_right = 628.0
+offset_bottom = 658.0
+texture = ExtResource("4_bqn3h")
+expand_mode = 1
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=2133711425]
+offset_left = 421.0
+offset_top = 378.0
+offset_right = 790.0
+offset_bottom = 699.0
+texture = ExtResource("5_qnnn4")
+expand_mode = 1
+
+[node name="TextureRect3" type="TextureRect" parent="." unique_id=654187557]
+offset_left = 606.0
+offset_top = 426.0
+offset_right = 824.0
+offset_bottom = 666.0
+texture = ExtResource("6_doie2")
+expand_mode = 1
+
+[node name="TextureRect4" type="TextureRect" parent="." unique_id=722982257]
+offset_left = 522.0
+offset_top = 399.0
+offset_right = 839.0
+offset_bottom = 674.0
+texture = ExtResource("7_r6ob7")
+expand_mode = 1
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=612529421]
+offset_left = 521.0
+offset_top = 329.0
+offset_right = 736.0
+offset_bottom = 410.0
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="ColorRect" unique_id=1873739720]
+layout_mode = 0
+offset_left = 21.0
+offset_top = 25.0
+offset_right = 358.0
+offset_bottom = 291.0
+theme_override_colors/default_color = Color(0.99975544, 0.9608292, 0.9699654, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/normal_font = ExtResource("3_0lrm4")
+theme_override_font_sizes/normal_font_size = 14
+text = "tysm!!
+- xx stacy"
+
+[connection signal="pressed" from="quit" to="." method="_on_quit_pressed"]
