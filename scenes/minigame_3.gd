@@ -44,9 +44,6 @@ func _on_boots1_pressed() -> void:
 func _on_boots2_pressed() -> void:
 	lose()
 
-func _on_boots3_pressed() -> void:
-	boots_set.hide()
-	bags_set.show()
 	
 func _on_boots4_pressed() -> void:
 	lose()
@@ -86,3 +83,8 @@ func lose() -> void:
 		get_tree().change_scene_to_file("res://scenes/done_screen.tscn")
 	else:
 		get_tree().change_scene_to_file("res://scenes/level_scene.tscn")
+
+
+func _on_correct_pressed() -> void:
+	boots_set.hide()
+	bags_set.show()

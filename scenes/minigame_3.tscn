@@ -169,16 +169,6 @@ size_flags_vertical = 0
 texture_normal = ExtResource("13_klr2t")
 stretch_mode = 0
 
-[node name="TextureRect3" type="TextureButton" parent="boots_set" unique_id=1298871388]
-custom_maximum_size = Vector2(200, 200)
-offset_left = 732.0
-offset_top = 359.0
-offset_right = 932.0
-offset_bottom = 559.0
-size_flags_vertical = 0
-texture_normal = ExtResource("5_wef8s")
-stretch_mode = 0
-
 [node name="TextureRect4" type="TextureButton" parent="boots_set" unique_id=1385648215]
 custom_maximum_size = Vector2(200, 200)
 offset_left = 1085.0
@@ -187,6 +177,15 @@ offset_right = 1285.0
 offset_bottom = 347.0
 size_flags_vertical = 0
 texture_normal = ExtResource("12_7ecev")
+stretch_mode = 0
+
+[node name="correct" type="TextureButton" parent="boots_set" unique_id=525130873]
+offset_left = 741.0
+offset_top = 365.0
+offset_right = 940.0
+offset_bottom = 539.0
+texture_normal = ExtResource("5_wef8s")
+ignore_texture_size = true
 stretch_mode = 0
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="boots_set" unique_id=394752366]
@@ -311,8 +310,8 @@ stretch_mode = 0
 [connection signal="pressed" from="dress_set/TextureButton" to="." method="_on_texture_button_pressed"]
 [connection signal="pressed" from="boots_set/TextureRect" to="." method="_on_boots1_pressed"]
 [connection signal="pressed" from="boots_set/TextureRect2" to="." method="_on_boots2_pressed"]
-[connection signal="pressed" from="boots_set/TextureRect3" to="." method="_on_boots3_pressed"]
 [connection signal="pressed" from="boots_set/TextureRect4" to="." method="_on_boots4_pressed"]
+[connection signal="pressed" from="boots_set/correct" to="." method="_on_correct_pressed"]
 [connection signal="pressed" from="bag_set/TextureRect" to="." method="_on_bag1_pressed"]
 [connection signal="pressed" from="bag_set/TextureRect2" to="." method="_on_bag2_pressed"]
 [connection signal="pressed" from="bag_set/TextureRect3" to="." method="_on_bag3_pressed"]
